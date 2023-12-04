@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+var FirstName = prompt("Enter your First name");
+var LastName = prompt("Enter your Last name");
+var FullName = FirstName + " " + LastName;
+document.write("Your Full Name: <br>" + FullName);
+document.write("<br>")
+var userInput = prompt("Enter your favorite mobile phone model:");
+var length = userInput.length;
+document.write("My favorite mobile phone is: " + userInput + "<br>Length of string: " + length);
+
+        document.write("<br>")
+        var word = prompt("Enter Word Pakistani");
+        var index = word.indexOf("n");
+        document.write("The index of 'n' in the word 'Pakistani' is: " + index);
+        document.write("<br>")
+
+        var word = prompt("Enter word Hello World");
+        var lastIndex = word.lastIndexOf("l");
+        
+        document.write("The last index of 'l' in the word 'Hello World' is: " + lastIndex);
+        document.write("<br>")
+        var word = prompt("Enter Any word");
+        var character = word.charAt(3);
+        
+        document.write("The character at the 3rd index in the word" +" "+word+ " " +"is: " + character);
+ document.write("<br>")
+ var firstName = prompt("Enter your First name");
+var lastName = prompt("Enter your Last name");
+var fullName = firstName.concat(" ", lastName);
+document.write("Hello " + fullName + "! Welcome.");
+ document.write("<br>")
+ var word = prompt("Enter Word Hyderabad");
+        var updatedWord = word.replace("Hyder", "Islam");
+        document.write("City: " + word + "<br>");
+        document.write("After replacement: " + updatedWord);
+         document.write("<br>")
+         var message = "Ali and Sami are best friends. They play cricket and football together.";
+        var updatedMessage = message.replace(/and/g, "&");
+        
+        document.write("Original Message: " + message + "<br>");
+        document.write("Updated Message: " + updatedMessage);
+         document.write("<br>")
+         var stringNumber = "472";
+        var convertedNumber = Number(stringNumber);
+        
+        document.write("String Value: " + stringNumber + "<br>");
+        document.write("Type of String Value: " + typeof stringNumber + "<br><br>");
+        document.write("Converted Number: " + convertedNumber + "<br>");
+        document.write("Type of Converted Number: " + typeof convertedNumber);
+  document.write("<br>")
+  var peanuts = prompt("Enter any word in small letter")
+  var cap = peanuts.toUpperCase()
+  document.write("User input" +" "+peanuts+"<br>"+" "+"Upper case" +cap)
+    document.write("<br>")
+var user = prompt("enter any word:");
+  var titlecase = user.slice(0,1)
+  var uprfirst = titlecase.toUpperCase()
+var full = user.slice(1)
+document.write("user input : " +user +"<br>"+ "title case " +   uprfirst + full);
+    document.write("<br>")
+var num = 35.36;
+        var numString = num.toString().replace(".", "");
+        
+        document.write("Number: " + num + "<br>");
+        document.write("Number as String without Dot: " + numString);
+    document.write("<br>")
+
+var username = prompt("Enter your username:");
+
+       while(username.match(/[,@.!]/)) {
+            username = prompt("Enter a username without '@', '.', ',', or '!' ");
+        }
+
+        document.write("Valid Username: " + username);
+    document.write("<br>")
+var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+var b = prompt("Enter an item to search for:");
+var c = b.toLowerCase();
+var found = false;
+
+for (var i = 0; i < A.length; i++) {
+    if (A[i] === c) {
+        document.write(c + " is available at index " + i + " in our bakery.");
+        found = true;
+        break;
+    }
+}
+
+if (!found) {
+    document.write("We are sorry. " + c + " is not available in our bakery.");
+}
+    document.write("<br>")
+
+var univercity = "University of Karachi"
+for(var i =0;i <univercity.length;i++){
+    document.write(univercity[i]+"<br>")
+}
+    document.write("<br>")
+
+var pakistan = prompt( "enter any word")
+var lastword = pakistan.slice(-1)
+document.write("user input:"+" "+pakistan+ "<br>"+"Last character of input:" +lastword)
+    document.write("<br>")
+var text = "The quick brown fox jumps over the lazy dog";
+var wordToSearch = "the";
+var count = 0;
+
+for (var i = 0; i < text.length; i++) {
+    if (text.substring(i, i + wordToSearch.length).toLowerCase() === wordToSearch.toLowerCase()) {
+        count++;
+    }
+}
+
+document.write("There are " + count + " occurrence(s) of the word '" + wordToSearch + "'");
+
+
+
+
+
+    </script>
+</body>
+</html>
